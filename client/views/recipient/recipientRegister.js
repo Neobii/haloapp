@@ -1,4 +1,4 @@
-Template.recipeintRegisterView.helpers({
+Template.recipientRegisterView.helpers({
   steps: function() {
     return [/*{
       id: 'contact-information',

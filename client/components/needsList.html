@@ -1,0 +1,11 @@
+<template name="needsList">
+<div class="row">
+{{#each currentNeeds}}
+<a href="{{pathFor 'need' _id=_id}}">
+<div class="col-md-4">
+{{> need}}
+</div>
+</a>
+{{/each}}
+</div>
+</template>

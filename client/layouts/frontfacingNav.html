@@ -16,7 +16,11 @@
       </ul>
     </nav>
     <div class="nav--login">
+      {{#if currentUser}}
+      {{username}}
+      {{else}}
       <a class="nav--login-link" href="/sign-in">Log in</a>
+      {{/if}}
     </div>
   </div>
 </header>

@@ -34,3 +34,4 @@ useraccounts:flow-routing
 mrgalaxy:stripe
 accounts-base
 accounts-password
+accounts-facebook

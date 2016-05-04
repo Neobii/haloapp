@@ -26,3 +26,6 @@ forwarder:autoform-wizard
 zimme:active-route
 raix:handlebar-helpers
 kadira:flow-router
+kadira:blaze-layout
+twbs:bootstrap
+session

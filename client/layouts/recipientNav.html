@@ -1,4 +1,4 @@
-<template name="frontFacingNav">
+<template name="recipientNav">
 <header class="nav" role="banner">
   <div class="nav--wrapper">
     <div class="nav--hamburger" data-action="open-sidenav"></div>
@@ -16,11 +16,7 @@
       </ul>
     </nav>
     <div class="nav--login">
-      {{#if currentUser}}
-      {{username}}
-      {{else}}
       <a class="nav--login-link" href="/sign-in">Log in</a>
-      {{/if}}
     </div>
   </div>
 </header>

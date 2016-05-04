@@ -1,4 +1,4 @@
-<template name="frontFacingNav">
+<template name="recepientDashboardNav">
 <header class="nav" role="banner">
   <div class="nav--wrapper">
     <div class="nav--hamburger" data-action="open-sidenav"></div>
@@ -8,20 +8,20 @@
     <nav role="navigation" class="pull-left hidden-xs hidden-sm">
       <ul class="nav--menu">
         <li class="nav--link">
-          <a href="#">Current Needs</a>
+          <a href="{{pathFor 'home'}}">Home</a>
         </li>
         <li class="nav--link">
-          <a href="#">How it works</a>
+          <a href="{{pathFor 'my-needs'}}">My Needs</a>
+        </li>
+        <li class="nav--link">
+          <a href="{{pathFor 'create-need'}}">Create Need</a>
+        </li>
+        <li class="nav--link">
+          <a href="{{pathFor 'profile'}}">Profile</a>
         </li>
       </ul>
     </nav>
-    <div class="nav--login">
-      {{#if currentUser}}
-      {{username}}
-      {{else}}
-      <a class="nav--login-link" href="/sign-in">Log in</a>
-      {{/if}}
-    </div>
+    
   </div>
 </header>
 </template>

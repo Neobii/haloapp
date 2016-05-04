@@ -25,3 +25,4 @@ aldeed:autoform
 forwarder:autoform-wizard
 zimme:active-route
 raix:handlebar-helpers
+kadira:flow-router

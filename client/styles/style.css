@@ -228,7 +228,7 @@ li {
     color: #365A68; }
 
 .nav {
-  background: url("../img/nav-gradient.svg") center center no-repeat;
+  background: url("/nav-gradient.svg") center center no-repeat;
   background-size: cover;
   -webkit-box-shadow: 0px 5px 3px rgba(61, 61, 61, 0.3);
           box-shadow: 0px 5px 3px rgba(61, 61, 61, 0.3);
@@ -247,7 +247,7 @@ li {
     width: 3.5rem;
     height: 2.6rem;
     margin-top: 2.75rem;
-    background: url("../img/hamburger.svg") center center no-repeat;
+    background: url("/hamburger.svg") center center no-repeat;
     background-size: contain;
     float: left;
     cursor: pointer; }
@@ -268,7 +268,7 @@ li {
             align-items: center;
     float: left; }
   .nav--logo, .slide-nav--logo {
-    background: url("../img/halo.svg") center center no-repeat;
+    background: url("/halo.svg") center center no-repeat;
     background-size: contain;
     width: 13rem;
     padding-bottom: 28.1278%;
@@ -299,7 +299,7 @@ li {
       content: '';
       width: 1.8rem;
       height: 1.2rem;
-      background: url("../img/login-arrow.svg") center center no-repeat;
+      background: url("/login-arrow.svg") center center no-repeat;
       background-size: contain;
       position: absolute;
       right: 0;
@@ -392,10 +392,10 @@ li {
     margin-left: -9rem; }
   .slide-nav--exit {
     height: 3.5rem;
-    background: url("../img/exit.svg") center center no-repeat;
+    background: url("/exit.svg") center center no-repeat;
     margin-top: 2.5rem; }
   .slide-nav--logo {
-    background: url("../img/halo-blue.svg") center center no-repeat; }
+    background: url("/halo-blue.svg") center center no-repeat; }
   .slide-nav--menu {
     list-style-type: none;
     text-transform: uppercase;

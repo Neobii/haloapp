@@ -29,3 +29,8 @@ kadira:flow-router
 kadira:blaze-layout
 twbs:bootstrap
 session
+useraccounts:bootstrap
+useraccounts:flow-routing
+mrgalaxy:stripe
+accounts-base
+accounts-password

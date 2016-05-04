@@ -1,9 +1,15 @@
 /*Template.slideNav.events({
-	transform: translateX(0px);
+	
 });*/
 
 Template.slideNav.helpers({
 	navIsOpen() {
-		return ""//"translateX(0px)"
+		return (Session.get("sideNavOpen"))?"transform: translateX(0px);":"";
+	}
+})
+
+Template.slideNav.events({
+	"click [data-action='close-nav']"() {
+		Session.set("sideNavOpen", false)
 	}
 })

@@ -1,3 +1,9 @@
-<template name="reciptientDashboardLayout">
-
+<template name="recipientDashboardLayout">
+{{> recipientNav}}
+<div class="main-content">
+<div class="container">
+{{> Template.dynamic template=main}}
+</div>
+</div>
+{{> slideNav}}
 </template>

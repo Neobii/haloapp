@@ -1,47 +1,130 @@
+recipientRegistration = new Mongo.Collection("recipientRegistration")
+
+
+
 Template.recipientRegisterView.helpers({
   steps: function() {
-    return [/*{
-      id: 'contact-information',
-      title: 'How many in your party',
+    return [{
+      id: 'firstName',
+      title: '*First Name',
+      schema: UserFormPage1,
+      formId: "insrt-contact"
+    }, {
+      id: 'lastName',
+      title: '*Last Name',
+      schema: UserFormPage1,
+      formId: "insrt-contact"
+    },  {
+      id: 'Address',
+      title: '*Address',
       schema: UserFormPage1,
       formId: "insert-contact"
     }, {
-      id: 'payment-information',
-      title: 'subscribe',
+      id: 'City',
+      title: 'Values',
+      schema: UserFormPage1,
+      formId: "*City"
+    }, {
+      id: 'State',
+      title: '*State',
+      schema: UserFormPage1,
+      formId: "State"
+    }, {
+      id: 'Zip Code',
+      title: '*Zip Code',
+      schema: UserFormPage1,
+      formId: "Values"
+    }, {
+    id: 'Country',
+      title: '*Country',
+      schema: UserFormPage1,
+      formId: "Country"
+    }, {
+    id: 'PrimaryPhone',
+      title: '*PrimaryPhone',
+      schema: UserFormPage1,
+      formId: "Value"
+    }, {
+    id: 'Email',
+      title: '*Email',
+      schema: UserFormPage1,
+      formId: "Email"
+    },{
+    id: 'Date of Birth',
+      title: 'Date of Birth',
       schema: UserFormPage2,
-      formId: "insrt subscrib"
-    },  {
-      id: 'zip-information',
-      title: 'What is your zip code',
-      schema: UserFormPage3,
+      formId: "Value"
+    },{
+    id: 'Marital Status',
+      title: 'Marital Status',
+      schema: UserFormPage2,
+      formId: "Marital Status"
+    },{
+    id: 'Number of Children',
+      title: '*Number of Children',
+      schema: UserFormPage2,
       formId: "insert-number"
-    }, {
-      id: 'brochure-information',
-      title: 'Values',
-      schema: UserFormPage4,
-      formId: "brochure-number"
-    }, {
-      id: 'interests-information',
-      title: 'Values',
-      schema: UserFormPage4,
-      formId: "interests-number"
-    }, {
-      id: 'comment-information',
-      title: 'Comments',
-      schema: UserFormPage5,
-      formId: "comments",
-      onSubmit: function(data, wizard) {
-        var self = this;
-        UserForms.insert(_.extend(wizard.mergedData(), data), function(err, id) {
-          if (err) {
-            self.done();
-            console.log("whoot?")
-          } else {
-            var us = UserSettings.findOne({userId: Meteor.userId()});
-            UserSettings.update({_id: us._id}, {$set: {showDiscoverDenton: true}})
-          }
-        });
-      }
-    }, 
-  */]
+    },{
+    id: 'Their ages',
+      title: '*Their ages',
+      schema: UserFormPage1,
+      formId: "age-number"
+    },{
+    id: 'Ethnicity',
+      title: '*Ethnicity',
+      schema: UserFormPage2,
+      formId: "Ethnicity"
+    },{
+    id: 'How did you hear about us?',
+      title: '*Email',
+      schema: UserFormPage2,
+      formId: "Email"
+    },{
+    id: 'Hardship Type',
+      title: '*Hardship Type',
+      schema: UserFormPage3,
+      formId: "Hardship Type"
+    },{
+    id: 'Country',
+      title: '*Country',
+      schema: UserFormPage3,
+      formId: "Value"
+    },{
+    id: 'State',
+      title: '*State',
+      schema: UserFormPage3,
+      formId: "State"
+    },{
+    id: 'City',
+      title: '*City',
+      schema: UserFormPage3,
+      formId: "City"
+    },{
+    id: 'Age Range',
+      title: '*Age Range',
+      schema: UserFormPage3,
+      formId: "Value"
+    },{
+    id: 'Marital Status',
+      title: '*Marital Status',
+      schema: UserFormPage3,
+      formId: "Marital Status"
+    },{
+    id: 'Gender',
+      title: '*Gender',
+      schema: UserFormPage3,
+      formId: "Gender"
+    },{
+    id: 'Children',
+      title: '*Children',
+      schema: UserFormPage1,
+      formId: "Children"
+    },{
+    id: 'Dollar Amount',
+      title: '*Dollar Amount',
+      schema: UserFormPage1,
+      formId: "insert-number"
+    },{
+  }
+     ]
 }});

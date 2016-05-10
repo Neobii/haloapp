@@ -1,3 +1,9 @@
 <template name="recipientHomeView">
-{{> quickForm type="insert" collection="Needs" id="insertNeed"}}
+{{#autoForm type="insert" collection="Needs" id="insertNeed"}}
+{{> afQuickField name="title"}}
+{{> afQuickField name="needAmount"}}
+{{> afQuickField name="description"}}
+{{> afQuickField name="needTypeId"}}
+<button class="btn btn-primary" type="submit">Submit</button>
+{{/autoForm}}
 </template>

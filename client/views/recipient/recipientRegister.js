@@ -117,12 +117,12 @@ Template.recipientRegisterView.helpers({
     },{
     id: 'Children',
       title: '*Children',
-      schema: UserFormPage1,
+      schema: UserFormPage3,
       formId: "Children"
     },{
     id: 'Dollar Amount',
       title: '*Dollar Amount',
-      schema: UserFormPage1,
+      schema: UserFormPage3,
       formId: "insert-number"
     },{
   }
